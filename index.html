@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Replace words in text</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <textarea id="text-entry" placeholder="Digite/cole o texto a ser substituido"></textarea>
+    <div class="controlers">
+      <div class="group">
+        <div class="check-box">
+          <input type="checkbox" id="chk-tab" /><label for="chk-tab"><i class="fa fa-toggle-off"></i><i class="fa fa-toggle-on" style="display: none;"></i>&nbsp;Procurar TAB</label>
+        </div>
+        <textarea id="text-from" placeholder="Procurar por..."></textarea>
+        <textarea id="text-to" placeholder="Substituir com..."></textarea>
+      </div>
+      <div class="actions">
+        <button type="button" id="btn-replace"><i class="fa fa-exchange"></i>&nbsp;Substituir</button>
+        <button type="button" id="btn-copy"><i class="fa fa-copy"></i>&nbsp;Copiar</button>
+        <button type="button" id="btn-clean"><i class="fa fa-eraser"></i>&nbsp;Limpar texto</button>
+        <button type="button" id="btn-clean-all"><i class="fa fa-trash"></i>&nbsp;Limpar tudo</button>
+      </div>
+    </div>
+    <div id="msg" class="displaynone"></div>
+  </div>
+</body>
+</html>

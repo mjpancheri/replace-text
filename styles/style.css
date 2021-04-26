@@ -1,0 +1,140 @@
+:root {
+  --button: #555;
+  --text: #ccc;
+  --text-success: rgb(53, 139, 60);
+  --back-success: rgb(110, 143, 112);
+  --text-error: rgb(139, 53, 53);
+  --back-error: rgb(143, 110, 110);
+  --text-dark: #444;
+  --background: #333;
+}
+
+* {
+  font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 600;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  width: 98px;
+  height: 2rem;
+  margin: auto;
+  background: var(--button);
+  color: var(--text);
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(0.7);
+}
+
+label {
+  color: var(--text);
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  margin: 0.5rem auto;
+}
+
+.controlers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  gap: 1rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+
+.check-box {
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.check-box input {
+  display: none;
+}
+
+.displaynone {
+  display: none;
+}
+
+.success {
+  background: var(--back-success);
+  color: var(--text-success);
+  border: 1px solid var(--text-success);
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin: 1rem auto;
+  font-size: 1rem;
+}
+
+.error {
+  background: var(--back-error);
+  color: var(--text-error);
+  border: 1px solid var(--text-error);
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin: 1rem auto;
+  font-size: 1rem;
+}
