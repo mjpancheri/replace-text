@@ -119,22 +119,8 @@ label {
   display: none;
 }
 
-.success {
-  background: var(--back-success);
-  color: var(--text-success);
-  border: 1px solid var(--text-success);
-  border-radius: 8px;
-  padding: 0.8rem;
-  margin: 1rem auto;
+#msg {
+  color: var(--text);
   font-size: 1rem;
-}
-
-.error {
-  background: var(--back-error);
-  color: var(--text-error);
-  border: 1px solid var(--text-error);
-  border-radius: 8px;
-  padding: 0.8rem;
-  margin: 1rem auto;
-  font-size: 1rem;
+  margin-top: 1rem;
 }

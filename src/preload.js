@@ -37,22 +37,13 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('btn-copy').addEventListener('click', () => {
-    const msg = document.getElementById('msg');
     document.getElementById('text-entry').select();
 
     if(document.execCommand('copy')) {
-      msg.innerText('Copiado!');
-      msg.classList.add(['success']);
-      msg.classList.remove(['error', 'displaynone']);
-    } else {
-      msg.innerText('Erro ao tentar copiar o conteúdo!');
-      msg.classList.add(['error']);
-      msg.classList.remove(['success', 'displaynone']);
+      document.getElementById('btn-copy').innerHTML = '<i class="fa fa-check"></i>&nbsp;Copiado!';
     }
     setTimeout(() => {
-      msg.innerText = '';
-      msg.classList.remove(['info', 'error']);
-      msg.classList.add(['displaynone']);
+      document.getElementById('btn-copy').innerHTML = '<i class="fa fa-copy"></i>&nbsp;Copiar';
     }, 2000);
   });
 });
