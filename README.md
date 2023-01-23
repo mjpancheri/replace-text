@@ -6,6 +6,12 @@
 npm install
 ```
 
+## Run
+
+```sh
+npm run start
+```
+
 ## Distribute
 
 ```sh
